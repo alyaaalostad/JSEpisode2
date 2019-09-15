@@ -25,12 +25,17 @@ function pairs(names) {
   if(names.length===0){
     return value
 }
-  while(names.length>0){
+  while(names.length>1){
     let random1=names.getRandom()
     let random2=names.getRandom()
-    value = [random1, random2]
+    value.push([random1, random2]) // from here till bellow fixed after first commit 
 
   }
+
+  if(names.length===1){
+    value.push([names[0]])
+  }
+  return value
 
 
 
