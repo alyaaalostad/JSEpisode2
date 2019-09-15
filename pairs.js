@@ -18,12 +18,27 @@
 *       pairs() returns []
 ****************************************************************/
 function pairs(names) {
-  // Your code goes here
+  let value = []
+  if (!names)
+  return value 
+
+  if(names.length===0){
+    return value
+}
+  while(names.length>0){
+    let random1=names.getRandom()
+    let random2=names.getRandom()
+    value = [random1, random2]
+
+  }
+
+
+
 }
 
 module.exports = pairs;
 
-/**********************************************
+/*********************************************
 * READ ME!!!!
 *
 * We've included this handy method for you.
